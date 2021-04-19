@@ -42,6 +42,13 @@ button {
     cursor: pointer;
 }
 
+.printivo-container {
+    padding: 0 50px;
+    max-width: 1240px;
+    width: 100%;
+    margin: 0 auto;
+}
+
 /* HEADER SECTION */
 .header {
     background: #F1F5F8;
@@ -127,10 +134,6 @@ button {
 }
 
 @media screen and (max-width:991px) {
-    .hero {
-        height: 80vh;
-    }
-
     .hero-container {
         max-width: 80rem;
         padding: 0 20px;
@@ -162,13 +165,9 @@ button {
     padding: 80px 0 0;
 }
 
-.step-line{
+.step-line {
     border: 1px solid #E2E4E8;
     margin-bottom: 80px;
-}
-
-.service-container {
-    padding: 0 50px;
 }
 
 .service-head {
@@ -233,11 +232,6 @@ button {
 }
 
 @media screen and (max-width: 991px) {
-    .service-container {
-        max-width: 80rem;
-        padding: 0 20px;
-    }
-
     .service-wrapper {
         display: grid;
         grid-template-columns: 1fr;
@@ -274,10 +268,6 @@ button {
 /* STEP SECTION  */
 .step {
     padding: 80px 0 0;
-}
-
-.step-container {
-    padding: 0 50px;
 }
 
 .step-head {
@@ -347,12 +337,7 @@ button {
     color: #22292F;
 }
 
-@media screen and (max-width: 991px){
-    .step-container {
-        max-width: 80rem;
-        padding: 0 20px;
-    }
-
+@media screen and (max-width: 991px) {
     .step-wrapper {
         display: grid;
         grid-template-columns: repeat(4, 1fr);
@@ -364,7 +349,7 @@ button {
         grid-template-columns: repeat(2, 1fr);
     }
 
-    .step-head{
+    .step-head {
         font-size: 30px;
     }
 
@@ -375,3 +360,176 @@ button {
 
 
 /* STEP SECTION  */
+
+/* CTA SECTION */
+.cta {
+    background: url(img/cta\ bg.png) no-repeat center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    padding: 80px 0;
+}
+
+.cta-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.cta-head {
+    font-size: 33px;
+    font-weight: 700;
+    line-height: 50px;
+    color: #fff;
+    max-width: 670px;
+    margin: 0 auto 20px;
+}
+
+.cta-subhead {
+    font-size: 22px;
+    font-weight: 400;
+    line-height: 46px;
+    color: #F7F8FA;
+    margin-bottom: 50px;
+}
+
+.cta-btn {
+    background: #209FED;
+    color: #fff;
+    font-size: 14px;
+    letter-spacing: 2px;
+    border-radius: 8px;
+    border: 1px solid #209FED;
+    padding: 18px 50px;
+}
+
+@media screen and (max-width:768px) {}
+
+/* CTA SECTION */
+
+/* PARTNERS SECTION */
+.partner {
+    padding: 80px 0;
+}
+
+.partner-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.partner-head {
+    font-size: 35px;
+    font-weight: 700;
+    line-height: 64px;
+    letter-spacing: 1px;
+    max-width: 416px;
+    margin: 0 auto 10px;
+}
+
+.partner-subhead {
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 32px;
+    max-width: 530px;
+    margin: 0 auto 50px;
+    color: #22292F;
+}
+
+.partner-img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* PARTNERS SECTION */
+
+/* FOOTER SECTION */
+.footer {
+    padding: 80px 0;
+    background: #F1F5F8;
+}
+
+.footer-wrapper {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 20px;
+}
+
+.footer-box {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.footer-item {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-title {
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 32px;
+    text-align: left;
+    color: #1D293F;
+}
+
+.footer-link {
+    color: #7C8087;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 40px;
+    text-align: left;
+    transition: all 0.5s ease;
+}
+
+.footer-link:hover {
+    color: #1D293F;
+    transition: all 0.5s ease;
+}
+
+#footerEmail{
+    background: #FFFFFF url(img/footer\ email.png) left no-repeat;
+    
+    padding-left: 30px;
+    box-shadow: 0px 32px 84px rgba(14, 86, 124, 0.165308);
+    height: 73px;
+    width: 413px;
+    border-radius: 4px;
+}
+
+#footerEmail::placeholder{
+    font-size: 16px;
+    font-weight: 400;
+    margin: 0 50px;
+    line-height: 22px;
+    color: #7C8087;
+}
+
+@media screen and (max-width: 768px) {
+    .footer-wrapper {
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 50px;
+        margin: 0 50px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .footer-wrapper {
+        margin: 0;
+    }
+}
+
+/* FOOTER SECTION */
+
+
+@media screen and (max-width: 991px) {
+    .printivo-container {
+        max-width: 80rem;
+        padding: 0 20px;
+    }
+}
