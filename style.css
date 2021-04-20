@@ -625,33 +625,14 @@ input[type=email]::placeholder {
         border-radius: 4px;
     }
 
-    .input-button {
-        margin: 10px 0 0 0;
-    }
-
-    .footer-box1 {
-        order: 1;
-    }
-
-    .footer-box2 {
-        order: 2;
-    }
-
-    .footer-box3 {
-        order: 4;
-    }
-
-    .footer-box4 {
-        order: 3;
-    }
-}
-
-@media screen and (max-width: 400px) {
     .footer-wrapper {
-        grid-template-columns: 1fr;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
     }
 
-}
+} 
 
 /* FOOTER SECTION */
 
